@@ -1,5 +1,5 @@
-from django.http import HttpResponse
+from django.shortcuts import render
 
 
 def all_posts(request):
-    return HttpResponse("Welcome to my awesome blog!")
+    return render(request, "posts/all_posts.html")
